@@ -4,7 +4,8 @@
   "description": "take home test https://gist.github.com/netbonus/c32f53b2115d8d24930d834155d65da4#file-wallettake-home-md",
   "main": "wallet.ts",
   "scripts": {
-    "test": "ts-node wallet.ts --to 0x32d44db61df0b10Ccf0164Df3D9cbeE72E3dF02c --value 0.01 --nonce 0"
+    "test": "ts-node wallet.ts --to 0x32d44db61df0b10Ccf0164Df3D9cbeE72E3dF02c --value 0 --nonce 0",
+    "test:unit": "ts-node test.ts"
   },
   "author": "frankiebee",
   "license": "ISC",
@@ -16,8 +17,11 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "crypto": "^1.0.1",
     "elliptic": "^6.6.1",
+    "g": "^2.0.1",
+    "hardhat": "^2.25.0",
     "keccak": "^3.0.4"
   }
 }

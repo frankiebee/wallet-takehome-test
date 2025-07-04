@@ -13,13 +13,18 @@ npm install
 ```bash
 ts-node wallet.ts \
   --to 0x... \
-  --value 0.01 \
+  --value 0.01 \ #unit size: eth
   --nonce 0
 ```
 
-Optional: `--gasPrice`, `--gasLimit`, `--chainId`
+
+
+
+Optional: `--gasPrice`, `--gasLimit`, `--chainId`, `--endpoint`
 Default mnemonic: `"test test test ... junk"`
 Path: `m/44'/60'/0'/0/0`
+
+If a endpoint is suplied the transaction will be broadcasted.
 
 ## Output
 

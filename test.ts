@@ -1,11 +1,11 @@
 import test from 'tape';
-const {
+import { toBuffer } from './scripts/utils'
+import {
   mnemonicToSeed,
   getHDNodeFromMnemonic,
-  toBuffer,
   rlpEncode,
   keccak256
-} = require('./wallet');
+} from './scripts/crypto';
 
 test('mnemonicToSeed returns 32-byte seed buffer', t => {
   const seed = mnemonicToSeed('test test test test test test test test test test test junk');
